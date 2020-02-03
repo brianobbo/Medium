@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!--In the label field of fragment you can give the name that you want to show in the toolbar-->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="brian.uginfo.com.fragments.PoliticsFragment"
+        android:label="Politics"
+        tools:layout="@layout/fragment_poliics" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountsFragment"
+        android:name="brian.uginfo.com.fragments.TechFragment"
+        android:label="Tech"
+        tools:layout="@layout/fragment_tech" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="brian.uginfo.com.fragments.HealthFragment"
+        android:label="Health"
+        tools:layout="@layout/fragment_health" />
+
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="brian.uginfo.com.fragments.FoodFragment"
+        android:label="Food"
+        tools:layout="@layout/fragment_food" />
+
+</navigation>
